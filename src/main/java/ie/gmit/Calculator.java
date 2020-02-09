@@ -42,6 +42,7 @@ public class Calculator {
         this.result = result;
     }
 
+    // this method will add two numbers
     public int add(int num1, int num2) {
        return num1 + num2;
     }
