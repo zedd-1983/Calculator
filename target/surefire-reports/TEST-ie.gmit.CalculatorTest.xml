@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.gmit.CalculatorTest" time="0.215" tests="10" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ie.gmit.CalculatorTest" time="0.22" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="IE"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/home/zedd/Various/jdk1.8.0_221/jre/lib/amd64"/>
-    <property name="sun.java.command" value="/home/zedd/IdeaProjects/calculator/target/surefire/surefirebooter3746596579175125897.jar /home/zedd/IdeaProjects/calculator/target/surefire 2020-02-17T10-16-21_044-jvmRun1 surefire3926961971559988038tmp surefire_04945121054666856872tmp"/>
+    <property name="sun.java.command" value="/home/zedd/IdeaProjects/calculator/target/surefire/surefirebooter7694208556510311710.jar /home/zedd/IdeaProjects/calculator/target/surefire 2020-02-17T10-25-37_921-jvmRun1 surefire5254095450903818163tmp surefire_06516336799145709813tmp"/>
     <property name="surefire.test.class.path" value="/home/zedd/IdeaProjects/calculator/target/test-classes:/home/zedd/IdeaProjects/calculator/target/classes:/home/zedd/.m2/repository/junit/junit/4.13/junit-4.13.jar:/home/zedd/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/zedd/.m2/repository/org/junit/jupiter/junit-jupiter/5.6.0/junit-jupiter-5.6.0.jar:/home/zedd/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:/home/zedd/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/zedd/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/zedd/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/zedd/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.6.0/junit-jupiter-params-5.6.0.jar:/home/zedd/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/zedd/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/zedd"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/zedd/IdeaProjects/calculator/target/surefire/surefirebooter3746596579175125897.jar:/home/zedd/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar"/>
+    <property name="surefire.real.class.path" value="/home/zedd/IdeaProjects/calculator/target/surefire/surefirebooter7694208556510311710.jar:/home/zedd/.m2/repository/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5-runtime.jar"/>
     <property name="sun.boot.class.path" value="/home/zedd/Various/jdk1.8.0_221/jre/lib/resources.jar:/home/zedd/Various/jdk1.8.0_221/jre/lib/rt.jar:/home/zedd/Various/jdk1.8.0_221/jre/lib/sunrsasign.jar:/home/zedd/Various/jdk1.8.0_221/jre/lib/jsse.jar:/home/zedd/Various/jdk1.8.0_221/jre/lib/jce.jar:/home/zedd/Various/jdk1.8.0_221/jre/lib/charsets.jar:/home/zedd/Various/jdk1.8.0_221/jre/lib/jfr.jar:/home/zedd/Various/jdk1.8.0_221/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="1.8.0_221-b11"/>
@@ -58,14 +58,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testAdd" classname="ie.gmit.CalculatorTest" time="0.077"/>
+  <testcase name="testDivideByZero" classname="ie.gmit.CalculatorTest" time="0.084"/>
+  <testcase name="testAdd" classname="ie.gmit.CalculatorTest" time="0.005"/>
   <testcase name="testSubtract" classname="ie.gmit.CalculatorTest" time="0.002"/>
   <testcase name="testParametricConstructor" classname="ie.gmit.CalculatorTest" time="0.002"/>
-  <testcase name="testSetResult" classname="ie.gmit.CalculatorTest" time="0.005"/>
-  <testcase name="testDivide" classname="ie.gmit.CalculatorTest" time="0.009"/>
+  <testcase name="testSetResult" classname="ie.gmit.CalculatorTest" time="0.002"/>
+  <testcase name="testDivide" classname="ie.gmit.CalculatorTest" time="0.005"/>
   <testcase name="testMultiply" classname="ie.gmit.CalculatorTest" time="0.002"/>
-  <testcase name="testSetVal1" classname="ie.gmit.CalculatorTest" time="0.002"/>
-  <testcase name="testSetVal2" classname="ie.gmit.CalculatorTest" time="0.002"/>
-  <testcase name="testConstructor" classname="ie.gmit.CalculatorTest" time="0.005"/>
-  <testcase name="testSetCount" classname="ie.gmit.CalculatorTest" time="0.003"/>
+  <testcase name="testSetVal1" classname="ie.gmit.CalculatorTest" time="0.013"/>
+  <testcase name="testSetVal2" classname="ie.gmit.CalculatorTest" time="0.004"/>
+  <testcase name="testConstructor" classname="ie.gmit.CalculatorTest" time="0.001"/>
+  <testcase name="testSetCount" classname="ie.gmit.CalculatorTest" time="0.007"/>
 </testsuite>

@@ -69,12 +69,16 @@ public class CalculatorTest {
     @Test
     void testDivide()
     {
+        myCalculator = new Calculator(5,5,0);
+            assertEquals(1, myCalculator.divide());
+    }
+    @DisplayName("Divide by zero test")
+    @Test
+    void testDivideByZero()
+    {
         myCalculator = new Calculator(5, 0, 0);
         if(myCalculator.getValue2() == 0)
             assertThrows(ArithmeticException.class, ()-> myCalculator.divide());
-
-        myCalculator = new Calculator(5,5,0);
-            assertEquals(1, myCalculator.divide());
     }
 
     @DisplayName("Set Value1 test")
