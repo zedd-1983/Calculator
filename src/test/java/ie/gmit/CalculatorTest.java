@@ -18,7 +18,7 @@ public class CalculatorTest {
     public void testStart(TestInfo testinfo, TestReporter testReporter)
     {
         testReporter.publishEntry("Testing " + testinfo.getDisplayName());
-        myCalculator = new Calculator();
+        myCalculator = new Calculator(2,2,0);
     }
 
     @AfterAll
@@ -31,7 +31,8 @@ public class CalculatorTest {
     @Test
     void testConstructor()
     {
-        assertEquals(0, myCalculator.getCount());
+        myCalculator = new Calculator();
+        assertEquals(1, myCalculator.getCount());
     }
 
     @DisplayName("Parametric constructor test")
@@ -39,36 +40,72 @@ public class CalculatorTest {
     void testParametricConstructor()
     {
        myCalculator = new Calculator(1,1,0);
-       assertEquals(0, myCalculator.getCount());
+       assertEquals(1, myCalculator.getCount());
     }
 
     @DisplayName("Add test")
     @Test
     void testAdd()
     {
-        assertEquals(10, myCalculator.add(5,5));
+        assertEquals(4, myCalculator.add());
     }
 
     @DisplayName("Subtract test")
     @Test
     void testSubtract()
     {
-        assertEquals(0, myCalculator.subtract(5,5));
+        myCalculator = new Calculator(4, 5, 0);
+        assertEquals(1, myCalculator.subtract());
     }
 
     @DisplayName("Multiply test")
     @Test
     void testMultiply()
     {
-        assertEquals(25, myCalculator.multiply(5,5));
+        assertEquals(4, myCalculator.multiply());
     }
 
     @DisplayName("Divide test")
     @Test
     void testDivide()
     {
-        assertEquals(1, myCalculator.divide(5,5));
+        myCalculator = new Calculator(5, 0, 0);
+        if(myCalculator.getValue2() == 0)
+            assertThrows(ArithmeticException.class, ()-> myCalculator.divide());
+
+        myCalculator = new Calculator(5,5,0);
+            assertEquals(1, myCalculator.divide());
     }
 
+    @DisplayName("Set Value1 test")
+    @Test
+    void testSetVal1()
+    {
+        myCalculator.setValue1(7);
+        assertEquals(7, myCalculator.getValue1());
+    }
 
+    @DisplayName("Set Value2 test")
+    @Test
+    void testSetVal2()
+    {
+        myCalculator.setValue2(7);
+        assertEquals(7, myCalculator.getValue2());
+    }
+
+    @DisplayName("Set Count test")
+    @Test
+    void testSetCount()
+    {
+        myCalculator.setCount(7);
+        assertEquals(7, myCalculator.getCount());
+    }
+
+    @DisplayName("Set Result test")
+    @Test
+    void testSetResult()
+    {
+        myCalculator.setResult(7);
+        assertEquals(7, myCalculator.getResult());
+    }
 }

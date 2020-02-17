@@ -1,5 +1,6 @@
 package ie.gmit;
 
+
 public class Calculator {
 
     private int value1;
@@ -54,15 +55,18 @@ public class Calculator {
     }
 
     // this method will add two numbers
-    public int add(int num1, int num2) {
-       return num1 + num2;
+    public int add() { return this.value1 + this.value2; }
+
+    public int subtract() {
+        if (this.value1 >= this.value2)
+            return this.value1 - this.value2;
+        else
+            return this.value2 - this.value1;
     }
 
-    public int subtract(int num1, int num2) { return num1 - num2;}
+    public int multiply() { return this.value1 * this.value2;}
 
-    public int multiply(int num1, int num2) { return num1 * num2;}
-
-    public float divide(int num1, int num2) { return num1 / num2; }
+    public float divide() { return this.value1 / this.value2; }
 
 
 }
